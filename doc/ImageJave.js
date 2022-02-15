@@ -1,3 +1,5 @@
+let = nexti = 0;
+let = pri = 5;
 
 let fill = document.getElementById("local");
 let close = document.getElementById("closebtn");
@@ -207,3 +209,9 @@ function hidenow() {
 
 }
 
+function CreatingElements() {
+    // let NewImage = document.createElement('img');
+    // NewImage.src = url;
+    // NewImage.alt = t;
+    v
+}

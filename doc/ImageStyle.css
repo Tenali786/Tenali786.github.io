@@ -10,10 +10,8 @@ body{
     background-color: rgb(66, 151, 190);
 }
 .Ramkrishna{
-     position: relative;
+    position: relative;
     top: 0px;
-    /*left: 50%;
-    transform: translateX(-50%); */
     font-size: 40px;
     color: white;
     cursor: pointer;
@@ -30,12 +28,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width:1340px;
-    position:relative;
-    top:0px;
-    left:0px;
-    /* padding: 50px; */
-    
+    /* width:1340px;     */
 }
 
 
