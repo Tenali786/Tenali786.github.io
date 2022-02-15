@@ -57,12 +57,13 @@ function fullsreen() {
     if (F == 0) {
 
         fill.style.position = "absolute";
-        fill.style.top = "0%";
-        fill.style.left = "0%";
+        orgback.style.display = "none";
+        fill.style.top = "1px";
+        fill.style.left = "-5px";
         show.style.top = "0%";
         show.style.left = "0%";
         fill.style.width = "100%";
-        fill.style.height = "100%";
+        fill.style.height = "621px";
         show.style.width = "100%";
         show.style.height = "100%";
         left.style.left = "0%";
@@ -71,7 +72,6 @@ function fullsreen() {
         left.style.position = "fixed";
         right.style.position = "fixed";
         UPL[0].style.display = "none";
-
 
     }
     else {
@@ -84,9 +84,9 @@ function fullsreen() {
         fill.style.borderRadius = "5px";
         left.style.display = "block";
         right.style.display = "block";
+        orgback.style.display = "block";
 
         show.style.display = "block";
-        // show.src = obj.src;
         show.style.width = "100%";
         show.style.height = "450px";
         show.style.position = "absolute";
@@ -146,6 +146,8 @@ function Close() {
     fill.style.display = "none";
     orgback.style.filter = "blur(0px)";
     orgback.style.pointerEvents = "fill";
+    orgback.style.display = "block";
+    F= 0;
 };
 
 
