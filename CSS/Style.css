@@ -1,0 +1,342 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@media only screen and (min-width:1200px) {
+
+    .Background{
+        margin-bottom: 90px;
+    }
+  
+    
+}
+
+
+@media only screen and (max-width:2000px) {
+
+    .Background{
+        margin-bottom: 10px;
+    }
+  
+    
+}
+
+
+
+.Navigation{
+   position: relative;
+}
+
+.Navigation::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    opacity: 1;
+}
+
+.Navigation .logo{
+    display: flex;
+    
+}
+
+.Navigation .logo img{
+    width: 60px;
+    height: 60px;
+    padding: 5px ;
+    border-radius: 50%;
+}
+
+.Navigation .logo ul{
+    display:flex;
+}
+
+.Navigation .logo li {
+    list-style: none;
+    font-size:1.3rem;
+    color: white;
+    }
+
+.logo ul li a{
+   padding: 3px 22px ;
+   display: block;
+   border-radius: 20px;
+   text-decoration: none;
+
+    color: white;
+    margin: 9px 0px;
+}
+
+.logo ul li a:hover{
+    background-color: white;
+    color: black;
+}
+
+.Background{
+    display: flex;
+    justify-content:center;
+    align-items:center ;
+    align-items: center;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 450px;
+}
+
+.Background::before{
+    content: "";
+    /* border: 2px solid red; */
+    margin-top: -128px;
+    position: absolute;
+   background:url('../Img/food1.jpg') no-repeat center center/cover;
+   z-index: -1;
+   width: 100%;
+   height: 75%;
+   opacity: 0.89;
+   
+}
+
+.Background h1{
+    color:white;
+    margin: 5px;
+    text-align: center;
+    font-size: 3.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+
+
+.Background p{
+    text-align: center;
+    width: 600px; 
+    justify-content:center;
+    margin: 3px 320px;
+    font-size:1.5rem;
+    color: white;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+
+.Background .btn{
+
+    font-size: 1.5rem;
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin: 20px ;
+    cursor: pointer;
+    background-color:rgb(88, 136, 132);
+    color: white;
+    font-family:monospace;
+    border-radius: 15px;
+
+}
+
+.Background .btn:hover{
+
+    font-size: 1.5rem;
+    /* border-radius: 30px; */
+    padding: 5px 15px;
+    margin: 20px ;
+    cursor: pointer;
+    background-color:rgb(30, 113, 124);
+    color:rgb(243, 227, 4);
+    font-family:monospace;
+    /* transition: all 1s ease-in-out 0.1s; */
+}
+
+/* services Container  */
+.h-primary{
+    font-size: 3.5rem;
+    width: 362px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color:rgb(255, 0, 170);
+    font-family:fantasy;
+} 
+
+.h-secondary{
+    font-size: 2.1rem;
+    padding: 12px ;  
+    width: 340;
+    margin: auto;
+    text-align: center;
+    color:green;
+    font-family:serif;
+}
+
+.service {
+    display: flex;
+    /* margin: 134px; */
+}
+
+.service .box{
+    border: 5px solid rgb(170, 53, 88);
+    margin-right: 10px;
+    margin-left: 5px;
+    background: rgb(245, 245, 247);
+
+    border-radius: 28px;
+
+}
+
+
+.service .box img{
+    width:425px;
+    height:300px;
+    border-radius: 26px;
+    margin:auto;
+    display:block;
+}
+
+.service .box p{
+   text-align: center;
+
+   font-size: 1.3rem;
+   
+}
+
+.service_container{
+    margin-top: -50px;
+}
+
+
+.service .btn2{
+    display: flex;
+    height:35px;
+    width: 150px;
+    border-radius: 12px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    justify-content: center;
+    align-items: center;    
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+    background: rgb(107, 95, 40);
+    color: yellow;
+    border: 2px solid gray;
+ }
+
+ .service .btn2:hover{
+    border: 3px solid yellow;
+    border-radius: 12px;
+    color: white;
+    /* background: rgb(66, 144, 175); */
+ }
+
+
+
+/* Client side designing */
+
+.client-section{
+    position: relative;
+    margin: 10px;
+}
+
+.client-section::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background:url('../Img/back.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#client{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.client-item{
+    margin: 7px;
+}
+
+#client img{
+    display: flex;
+    height: 110px;
+}
+
+
+/* Contact section designing */
+.contact{
+    margin: 10px;
+    border:2px solid red;
+    position: relative;
+}
+
+footer{
+    text-align: center;
+    background: black;
+    color: white;
+}
+
+.contact::before{
+    content:"";
+    width:100%;
+    height:100%;
+    position:absolute;
+    z-index:-1;
+    opacity: 0.7;
+    background:url("../Img/cont.jpg") no-repeat center center/cover;
+}
+
+.contact-box{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 24px;
+    color: yellow;
+}
+.contact-box input, .contact-box textarea{
+    padding:0.5rem;
+    font-size: 0.8rem;
+    width: 100%;
+    border: 2px solid orange;
+    border-radius: 9px;
+}
+
+.contactnow{
+    width: 30%;
+    margin: auto;
+    /* border-radius: 50px */
+}
+
+
+.contactnow input{
+    width: 100%;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight:bolder;
+    color: yellow;
+    background: gray;
+    border: 3px solid yellow;
+    cursor: pointer;
+    font-family:monospace;
+}
+
+
+
+.contactnow input:hover{
+    border: 3px solid red;
+}
+.contact-box form{
+    width: 38%;
+}
+
+.contact-box label{
+    font-size:1.3rem;
+    font-family:sans-serif;
+}
+
