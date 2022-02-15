@@ -1,5 +1,4 @@
-let = nexti = 0;
-let = pri = 5;
+let F = 0;
 
 let fill = document.getElementById("local");
 let close = document.getElementById("closebtn");
@@ -12,6 +11,7 @@ let right = document.getElementById("right");
 let UPL = document.getElementsByClassName("upload");
 let UP = document.getElementsByClassName("uploadimage");
 let i = 1;
+let U = 0;
 
 function ShowImage(obj) {
 
@@ -52,7 +52,6 @@ function ShowImage(obj) {
 
 };
 
-let F = 0;
 function fullsreen() {
     if (F == 0) {
 
@@ -157,7 +156,6 @@ function downloads(down) {
 
 }
 
-let U = 0;
 
 function UploadNow() {
 
@@ -209,9 +207,3 @@ function hidenow() {
 
 }
 
-function CreatingElements() {
-    // let NewImage = document.createElement('img');
-    // NewImage.src = url;
-    // NewImage.alt = t;
-    v
-}
