@@ -4,22 +4,27 @@
 }
 
 body{
-    display: flex;
-    justify-content:center;
-    align-items:center;
+    padding: 10px 10px;
     background-color: rgb(66, 151, 190);
 }
 .Ramkrishna{
+    position: relative;
+
+    text-align: center;
+}
+.Ramkrishna span{
+    width: 100%;
+
     position: relative;
     top: 0px;
     font-size: 40px;
     color: white;
     cursor: pointer;
     text-decoration: none;
-    margin-bottom: 30px;
+    margin-bottom: 30px; 
 }
 
-.Ramkrishna:hover{
+.Ramkrishna span:hover{
     transform: scale(1.1);
 }
 
@@ -29,11 +34,15 @@ body{
     align-items: center;
     flex-wrap: wrap;
 }
-
+.Images{
+border:2px solid red;
+/* width:min-content; */
+padding:auto auto;
+    
+}
 
 img{
-    
-    width:250px;
+    width:230px;
     height:150px;
     border-radius:5px;
     margin: 2px;
@@ -41,16 +50,34 @@ img{
     border: 5px solid white;
 }
 
-.Images img:hover{
+.MainContainer img:hover{
     transform: scale(1.1);
 }
 
 #show{
     display: none;
     transition: 1s;
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    border-radius: 0px;
+    filter: none;
+    border: none;
+    transform: scale(1);
 }
-
-
+#local{
+    position: fixed;
+    top: 10%;
+    left: 20%;
+    border: 5px solid white;
+    width: 850px;
+    height: 450px;
+    border-radius: 5px;
+    display: none;
+}
 
 #title{
     position:absolute;
@@ -84,7 +111,7 @@ img{
 }
 #left{
     position: absolute;
-    left: -33%;
+    left: -20%;
     top: 40%;
     width: 90px;
     height: 90px;
@@ -92,7 +119,8 @@ img{
     background:transparent;
     border:none;
     outline: none;
-    opacity: 0.2;
+    opacity: 0.6;
+    cursor: pointer;
     color:white;
     display: none;
     /* pointer-events:fill; */
@@ -101,7 +129,7 @@ img{
 #right{
     
     position: absolute;
-    right: -25%;
+    right: -20%;
     top: 40%;
     width: 70px;
     height: 90px;
@@ -109,7 +137,8 @@ img{
     background:transparent;
     border:none;
     outline: none;
-    opacity: 0.2;
+    opacity: 0.6;
+    cursor: pointer;
     color:white;
     display: none;
 
@@ -134,10 +163,14 @@ img{
     transform: scale(1.4);
 }
 
+.Uploadbtn{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: right;
+    margin: 3px 3px;
+}
 .upload{
-    position:absolute;
-    top: 5px;
-    right:5px;
+    
     color:white;
     width: 150px;
     height: 30px;
@@ -145,6 +178,7 @@ img{
     background-color: rgb(5, 112, 235);
     justify-content: center;
     align-items: center;
+    text-align: center;
     border-radius: 5px;
     font-weight:bolder;
     cursor: pointer;
@@ -152,12 +186,15 @@ img{
 }
 
 .uploadimage{
+
    width: 250px;
    height: 300px;
    background-color: rgb(33, 131, 98);
    position: fixed;
-   top:50px;
-   right:30px;
+   top:30%;
+   transform: translateY(-20%);
+   right:50%;
+   transform: translateX(50%);
    border:3px solid white;
    border-radius: 5px;
    text-align: center;
@@ -177,7 +214,6 @@ img{
     font-size: 20px;
     color: white;
     width: 100%;
-    /* background-color: gray; */
     text-align: left;
     
 }
@@ -198,12 +234,14 @@ img{
     color: blue;
 }
 #add{
+    margin-top: -1px;
     color:white;
     background-color:rgb(36, 190, 113);
-    font-size: 22px;
+    font-size: 15px;
     font-family:cursive;
     text-align: center;
     cursor: pointer;
+    width: 120px;
 }
 
 .Successfully{
@@ -255,27 +293,49 @@ img{
         
         width:130px;
         height:70px;
+        border: 3px solid white;
         
     }
     .Images{
         margin-top: 10px;
     }
-    .upload{
-        right: 50%;
-        transform: translateX(50%);
-        margin-top: 20px;
-    }
+    
+   
 }
 
 @media screen and (max-width:450px){
     
    img{
+       border: 1px solid white;
        width: 100px;
    }
 
 }
 
+@media screen  and (max-width:950px){
+    #local{
+        left: 0%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        height: 420x;
+        margin-right: 2px;
+    }
+    #show{
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+    #left{
+        left: 0%;
+    }
+    #right{
+        right: 0%;
+    }
+
+}
 @media screen and (max-width:1100px) and (min-width:850){
+    
     
    img{
        width: 150px;

@@ -2,10 +2,10 @@ let = nexti = 0;
 let = pri = 5;
 
 let fill = document.getElementById("local");
+let Main = document.getElementById("main");
 let close = document.getElementById("closebtn");
 let show = document.getElementById("show");
 let downl = document.getElementById("download");
-let orgback = document.getElementById("Images");
 let Image = document.getElementsByClassName("img");
 let left = document.getElementById("left");
 let right = document.getElementById("right");
@@ -20,16 +20,8 @@ function ShowImage(obj) {
     close.style.display = "block";
     fill.style.display = "block";
     downl.style.display = "block";
-    orgback.style.filter = "blur(3px)";
-    orgback.style.pointerEvents = "none";
 
-    fill.style.position = "fixed";
-    fill.style.top = "10%";
-    fill.style.left = "20%";
-    fill.style.border = "5px solid white";
-    fill.style.width = "850px";
-    fill.style.height = "450px";
-    fill.style.borderRadius = "5px";
+    
 
     left.style.display = "block";
     right.style.display = "block";
@@ -37,19 +29,11 @@ function ShowImage(obj) {
     show.style.display = "block";
     show.src = obj.src;
     show.alt = obj.alt;
-    show.style.width = "100%";
-    show.style.height = "450px";
-    show.style.position = "absolute";
-    show.style.top = "0px";
-    show.style.left = "0px";
-    show.style.margin = "0px";
-    show.style.borderRadius = "0px";
-    show.style.filter = "none";
-    show.style.border = "none";
-    show.style.transform = "scale(1)";
+    
+    Main.style.filter = "blur(5px)";
+    Main.style.pointerEvents = "none";
     i = parseInt(obj.alt.split(" ").pop()-1);
-
-
+    disableScroll();
 };
 
 let F = 0;
@@ -57,7 +41,6 @@ function fullsreen() {
     if (F == 0) {
 
         fill.style.position = "absolute";
-        orgback.style.display = "none";
         fill.style.top = "1px";
         fill.style.left = "-5px";
         show.style.top = "0%";
@@ -84,7 +67,6 @@ function fullsreen() {
         fill.style.borderRadius = "5px";
         left.style.display = "block";
         right.style.display = "block";
-        orgback.style.display = "block";
 
         show.style.display = "block";
         show.style.width = "100%";
@@ -144,10 +126,10 @@ function overmessage(a) {
 function Close() {
     UPL[0].style.display = "block";
     fill.style.display = "none";
-    orgback.style.filter = "blur(0px)";
-    orgback.style.pointerEvents = "fill";
-    orgback.style.display = "block";
+    Main.style.filter = "blur(0px)";
+    Main.style.pointerEvents = "fill";
     F= 0;
+    enableScroll();
 };
 
 
@@ -158,7 +140,6 @@ function downloads(down) {
 }
 
 let U = 0;
-
 function UploadNow() {
 
     if (U == 0) {
@@ -188,7 +169,7 @@ function Submit() {
         img.setAttribute("onclick","ShowImage(this)");
         let v = document.createTextNode("onclik='ShowImage(this)'");
         img.appendChild(v);
-        document.getElementById('Images').appendChild(img);
+        document.getElementById('main').appendChild(img);
         document.getElementsByClassName("Successfully")[0].style.display = "block";
         document.getElementsByClassName("h3")[0].style.display = "block";
     }
@@ -214,4 +195,23 @@ function CreatingElements() {
     // NewImage.src = url;
     // NewImage.alt = t;
     v
+}
+
+
+function disableScroll() {
+    // Get the current page scroll position
+    scrollTop = 
+      window.pageYOffset || document.documentElement.scrollTop;
+    scrollLeft = 
+      window.pageXOffset || document.documentElement.scrollLeft,
+
+        // if any scroll is attempted,
+        // set this to the previous value
+        window.onscroll = function() {
+            window.scrollTo(scrollLeft, scrollTop);
+        };
+}
+
+function enableScroll() {
+    window.onscroll = function() {};
 }
