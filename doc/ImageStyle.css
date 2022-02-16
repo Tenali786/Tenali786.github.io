@@ -333,7 +333,7 @@ img{
         right: 0%;
     }
     #title{
-        font-size: 35px;
+        font-size: 20px;
     }
 }
 @media screen and (max-width:1100px) and (min-width:850){
