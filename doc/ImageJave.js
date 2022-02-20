@@ -33,7 +33,6 @@ function ShowImage(obj) {
     Main.style.filter = "blur(5px)";
     Main.style.pointerEvents = "none";
     i = parseInt(obj.alt.split(" ").pop()-1);
-    disableScroll();
 };
 
 let F = 0;
@@ -129,7 +128,6 @@ function Close() {
     Main.style.filter = "blur(0px)";
     Main.style.pointerEvents = "fill";
     F= 0;
-    enableScroll();
 };
 
 
