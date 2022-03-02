@@ -1,158 +1,142 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tenali Ramkrishna</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="doc/ImageStyle.css">
-    <link rel="icon" href="images/logo.png">
-
-    <!-- <link rel="stylesheet" media="screen and (max-width:1200px)" href="doc/mobile.css"> -->
-
-
-
+    <link rel="stylesheet" href="pagestyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
 </head>
 
-<body id="body">
 
-    <div class="Ramkrishna" ><span class="a" onclick="window.location.href=' https://www.github.com/tenali786'">!! 💖💕
-            Tenali Ramkrishna 💖💕 !!</span></div>
-    <div class="Uploadbtn">
-    <button class="upload" title="Upload a Image" onclick="UploadNow()">Upload Now<i class="material-icons"id="material">upload</i></button>
-</div>
-    <div class="MainContainer" id="main">
+<body>
+    <!-- <div class="logo"><img src="89650675.jpg" alt=""></div> -->
 
-        <img class="img"
-            src="https://c4.wallpaperflare.com/wallpaper/595/327/767/katherine-langford-beautiful-wallpaper-preview.jpg"
-            alt="Image 1" onclick="ShowImage(this)">
-        <img class="img"
-            src="https://images.unsplash.com/photo-1562003389-902303a38425?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=962&q=80"
-            alt="Image 2" onclick="ShowImage(this)">
-        <img class="img"
-            src="https://images.unsplash.com/photo-1608716987742-7a5d6149ab5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80"
-            alt="Image 3" onclick="ShowImage(this)">
-        <img class="img"
-            src="https://media.istockphoto.com/photos/they-spend-every-possible-moment-together-picture-id612650768?b=1&k=20&m=612650768&s=170667a&w=0&h=y7PBZv5CPja82vuL8qu6PXGQCRgOUbizrkGY2iJ3VRY="
-            alt="Image 4" onclick="ShowImage(this)">
-        <img class="img"
-            src="https://media.istockphoto.com/photos/woman-with-socks-holding-coffee-in-a-fireplace-picture-id1303753963?b=1&k=20&m=1303753963&s=170667a&w=0&h=Wp_ry-Syza2DjMIzGu17_q18T92FuvtguYva-I-YLB0=
-            "
-            alt="Image 5" onclick="ShowImage(this)">
-        <img class="img" src="
-        https://images.unsplash.com/photo-1636310794789-123951c0fd58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=812&q=80
-        "
-            alt="Image 6" onclick="ShowImage(this)">
-        <img class="img"
-            src="https://images.unsplash.com/photo-1628965912216-0b9cd2cc6c47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80
-            "
-            alt="Image 7" onclick="ShowImage(this)">
-        <img class="img"
-            src="https://images.unsplash.com/photo-1510855062610-dd2628e4eb92?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1030&q=80
-            "
-            alt="Image 8" onclick="ShowImage(this)">
-        <img class="img"
-            src="https://images.unsplash.com/photo-1553344699-b12ab6ae5fb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80
-            "
-            alt="Image 9" onclick="ShowImage(this)">
-        <img class="img"
-            src="https://images.unsplash.com/photo-1501812467184-ed92ff087e10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-            alt="Image 10" onclick="ShowImage(this)">
-        <img class="img"
-            src="https://wallpaperaccess.com/full/1765498.jpg"
-            alt="Image 11" onclick="ShowImage(this)">
-        <img class="img"
-            src="https://media.istockphoto.com/photos/girl-relaxing-on-a-sofa-at-home-picture-id646457570?b=1&k=20&m=646457570&s=170667a&w=0&h=COWMj-bYBqoZ4Yr9A-Xu42E7CdyrclddeeTzrMitAC8="
-            alt="Image 12" onclick="ShowImage(this)">
-        <img class="img"
-            src="https://www.wallpapertip.com/wmimgs/99-999639_quality-cool-girls-wallpapers-for-pc-mac-laptop.jpg"
-            alt="Image 13" onclick="ShowImage(this)">
-        <img class="img"
-            src="https://c4.wallpaperflare.com/wallpaper/645/283/797/girls-pc-download-hd-wallpaper-preview.jpg"
-            alt="Image 14" onclick="ShowImage(this)">
-        <img class="img"
-            src="https://wallpaperaccess.com/full/281656.jpg"
-            alt="Image 15" onclick="ShowImage(this)">
-        <img class="img"
-            src="https://media.istockphoto.com/photos/eating-and-enjoying-watermelon-picture-id518841734?b=1&k=20&m=518841734&s=170667a&w=0&h=AQcbqN15WI7Dhmct2jDvssiw4jFRWKY157mtv8pPIDE="
-            alt="Image 16" onclick="ShowImage(this)">
-        <img class="img"
-            src="https://c4.wallpaperflare.com/wallpaper/631/144/41/girls-pc-hd-download-wallpaper-preview.jpg"
-            alt="Image 17" onclick="ShowImage(this)">
-        <img class="img"
-            src="https://c4.wallpaperflare.com/wallpaper/997/621/247/girl-download-hd-1920x1080-wallpaper-preview.jpg"
-            alt="Image 18" onclick="ShowImage(this)">
-        <img class="img"
-            src="https://c4.wallpaperflare.com/wallpaper/922/246/358/girl-download-hd-1920x1080-wallpaper-preview.jpg"
-            alt="Image 19" onclick="ShowImage(this)">
-        <img class="img"
-            src="https://c4.wallpaperflare.com/wallpaper/769/118/521/girl-download-hd-1920x1080-wallpaper-preview.jpg"
-            alt="Image 20" onclick="ShowImage(this)">
-        <img class="img"
-            src="https://c4.wallpaperflare.com/wallpaper/330/260/859/girl-download-hd-1920x1080-wallpaper-preview.jpg"
-            alt="Image 21" onclick="ShowImage(this)">
-        <img class="img"
-            src="https://c4.wallpaperflare.com/wallpaper/584/929/115/girl-download-hd-1920x1080-wallpaper-preview.jpg"
-            alt="Image 22" onclick="ShowImage(this)">
-        <img class="img"
-            src="https://c4.wallpaperflare.com/wallpaper/73/956/32/girls-download-hd-for-pc-wallpaper-preview.jpg"
-            alt="Image 23" onclick="ShowImage(this)">
-        <img class="img"
-            src="https://c4.wallpaperflare.com/wallpaper/103/243/728/girl-download-hd-1920x1080-wallpaper-preview.jpg"
-            alt="Image 24" onclick="ShowImage(this)">
-        <img class="img"
-            src="https://c4.wallpaperflare.com/wallpaper/688/167/662/girls-computer-hd-download-wallpaper-preview.jpg"
-            alt="Image 25" onclick="ShowImage(this)">
-        <img class="img"
-            src="https://wallpaperaccess.com/full/1765495.jpg"
-            alt="Image 26" onclick="ShowImage(this)">
-        <img class="img"
-            src="https://wallpapercave.com/wp/wp6928399.jpg"
-            alt="Image 27" onclick="ShowImage(this)">
-        <img class="img"
-            src="https://wallpapercave.com/wp/wp4997698.jpg"
-            alt="Image 28" onclick="ShowImage(this)">
-        <img class="img"
-            src="https://cdn.wallpapersafari.com/87/11/jzrPxw.jpg"
-            alt="Image 29" onclick="ShowImage(this)">
-        <img class="img"
-            src="https://w0.peakpx.com/wallpaper/754/91/HD-wallpaper-hycoo-hansika-yellow-sand-modern-actress-female-beautiful-girls-bubbly-woman-celebrity-indian.jpg"
-            alt="Image 30" onclick="ShowImage(this)">
+    <div class="main_border">
+        <section class="center_box">
+            <p class="title">Tenali Ramkrishna</p>
+            <div class="searchnow">
+                <svg class="searchicon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-search" viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+                <input type="search" placeholder="Search Google or typea URL" name="search" id="searchbox" required
+                    src="https://my-results-page-url.com/?q=myQuery" onkeydown="openurl(event)">
+
+
+
+                <svg class="mic" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-mic" viewBox="0 0 16 16" onclick="record()">
+                    <path
+                        d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
+                    <path
+                        d="M10 8a2 2 0 1 1-4 0V3a2 2 0 1 1 4 0v5zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3z" />
+                </svg>
+
+            </div>
+
+
+            <button id="searchbutton" onclick="openurl(1)"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg><span>Search Now</span></button>
+
+
+            <div class="main_container">
+                <a href="https://www.youtube.com/" class="main_box" target="_blank">
+                    <div class="inner">
+                        <img src="youtube.png" alt="Logo not found">
+                    </div>
+                    <h3>youtube</h3>
+                </a>
+                <a href="https://mail.google.com/mail/u/0/#inbox" class="main_box" target="_blank">
+                    <div class="inner">
+                        <img src="gmail.png" alt="Logo not found">
+                    </div>
+                    <h3>Gmail</h3>
+                </a>
+                <a href="https://www.facebook.com/login/" class="main_box" target="_blank">
+                    <div class="inner">
+                        <img src="facebook.png" alt="Logo not found">
+                    </div>
+                    <h3>Facebook</h3>
+                </a>
+                <a href="https://web.whatsapp.com/'" class="main_box" target="_blank">
+                    <div class="inner">
+                        <img src="python.png" alt="Logo not found">
+                    </div>
+                    <h3>WhatsApp</h3>
+                </a>
+                <a href="https://photos.google.com/?tab=rq1&pageId=none" class="main_box" target="_blank">
+                    <div class="inner">
+                        <img src="photo.png" alt="Logo not found">
+                    </div>
+                    <h3>Google photos</h3>
+                </a>
+                
+
+
+            </div>
+
+
 
     </div>
 
-    <div id="local">
-        <img id="show" src="" alt="" ondblclick="fullsreen()">
-        <img src="images/close.png" alt="Close" id="closebtn" onclick="Close()" onmouseover="overmessage(1)"
-            onmouseleave="overmessage(2)">
-        <p id="clmess">Close</p>
-        <h3 id="title"> </h3>
-        <img src="images/next.png" id="right" onclick="Next()" <abbr title="Next Image"></abbr>
-        <img src="images/prev.png   " id="left" onclick="Previous()" <abbr title="Previous Image"></abbr>
+    <div class="scrollbar">
 
-        <a id="download" download="" href="" title="Download Image" onclick="downloads(this)"><i class="material-icons"
-                id="material">download</i></a>
+        <marquee direction="left">
+            Hello Friends !! I am Tenali Ramkrishna !! I am Studying in BCA 2nd year !! I want to become a software
+            developer !!
+            I have been complete python, c, c++ and web development Languages;
+        </marquee>
 
     </div>
 
-    <form class="uploadimage">
-        <h2 class="imgtitle">Upload Image Using URL<br>🎈🎈🎈🎈🎈🎈🎈🎈🎈🎈</h2>
-        <label for="imgURL">Image Url</label>
-        <input type="text" id="imgURL" name="imgURL" placeholder=" Image URL...😍" required>
+    <script>
+        window.onload = function(){
+            document.getElementById('searchbox').value="";
 
-        <label for="imgtitle">Image Title</label>
-        <input type="text" id="imgtitle" name="imgtitle" placeholder="Image Title....🥰" required>
-        <input type="button" value="Upload Now" id="add" onclick="Submit()">
+        }
+        function openurl(a = 2) {
+            // document.write("asjdkfjlkadjs")
+            var x = event.key;
+            var query = document.getElementById('searchbox').value;
+            var url = 'https://www.google.com/search?q=' + query;
+            if (x == "Enter" && query!="") {
+                    window.open(url, '_self');
 
-        <section class="Successfully">
-            <h3 class="h3">Successfully Upload</h3>
-            <a class="closenow" onclick="hidenow()">Close now</a>
-        </section>
-    </form>
+                
+            }
+            else if (a == 1) {
+                if(query!="")
+                {
+                    window.open(url, '_self');
 
-    <script src="doc/ImageJave.js"></script>
+                }
+
+            }
+        }
+    </script>
+
+
+    <script>
+        function record() {
+            var recognition = new webkitSpeechRecognition();
+            recognition.lag = "en-GB";
+            recognition.onresult = function (event) {
+                var speechText = 'https://www.google.com/search?q=' + event.results[0][0].transcript;
+
+                window.open(speechText, '_self');
+
+            }
+            recognition.start();
+        }
+    </script>
+
+
 </body>
 
 </html>
