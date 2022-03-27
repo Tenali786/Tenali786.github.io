@@ -167,7 +167,8 @@ span{
     margin: 30px 0;
     border-radius: 5px;
     border: 2px solid #535151;
-    width: 100px;
+    width: 130px;
+    text-align: center;
 }
 
 .details a:hover{
@@ -179,7 +180,7 @@ span{
 .images{
     width: 45px;
     height: 200px;
-    /* border: 2px solid yellow; */
+    border: 2px solid yellow;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -294,8 +295,8 @@ span{
 
 @media screen and (max-width:780px){
     .images img{
-        width: 300px;
-        height: 300px;
+        width: 350px;
+        height: 350px;
     }
     
 }
