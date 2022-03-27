@@ -180,7 +180,6 @@ span{
 .images{
     width: 45px;
     height: 200px;
-    border: 2px solid yellow;
     display: flex;
     justify-content: center;
     align-items: center;
