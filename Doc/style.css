@@ -36,7 +36,7 @@ nav{
 
 }
 
-nav ul{
+/* nav ul{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,9 +60,9 @@ nav ul li a{
 nav ul li a:hover{
     background-color: rgb(72, 141, 112);
     color: yellow;
-    border-radius: 30px;
+    /* border-radius: 30px; */
 
-}
+} */
 
 .searchnow{
     width:fit-content;
@@ -243,8 +243,8 @@ span{
 }
 
 .content img{
-    width: 70%;
-    height: 50%;
+    width: 250px;
+    height: 140px;
     border-radius: 5px;
    
 }
