@@ -36,7 +36,7 @@ nav{
 
 }
 
-/* nav ul{
+nav ul{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,7 +62,7 @@ nav ul li a:hover{
     color: yellow;
     /* border-radius: 30px; */
 
-} */
+}
 
 .searchnow{
     width:fit-content;
